@@ -220,42 +220,64 @@ a:focus {
   top: 7px;
 }
 
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  margin-right: 30px;
+.menu_list{
+  list-style: none;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  margin: 0;
+  background-color: black;
 }
 
-.menu ul li {
-  float: left;
+.menu_list > li {
+  display: inline-block;
   position: relative;
 }
 
-.menu ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.menu_list > li > a{
+   display: block;
+   padding: 10px 15px;
+   text-decoration: none;
+   color: white;
 }
 
-.menu ul li a:hover {
+.menu_list > li > a:hover{
   background-color: #e76b19;
 }
 
-.sub_tab {
+.sub_menu{
+  display: none;
   position: absolute;
-  /* display: none; */
-  background-color: #333;
-  padding: 10px 23px;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  border: 1px solid #ccc;
   width: 200px;
-  right: 0px;
-  top: 70px;
-  z-index: 999;
+}
+
+.menu_list > li:hover .sub_menu{
+    display: block;
+}
+
+.sub_menu li{
+  display: block;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #333232;
+  margin-left: -28px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.sub_menu li:last-child {
+  border-bottom: none;
+}
+
+.sub_menu li:hover{
+  background-color: #e76b19;
+}
+
+.sub_menu li a{
   color: white;
+  padding: 10px 15px;
+  text-decoration: none;
 }
 
 /*end header section*/
