@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Drool</title>
+  <title>Rescue animals</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -23,6 +23,7 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -34,39 +35,26 @@
           <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" alt="">
           </a>
-          <div class="" id="">
-            <div class="User_option">
-              <form class="form-inline my-2  mb-3 mb-lg-0">
-                <input type="search" placeholder="Search">
-                <button class="btn   my-sm-0 nav_search-btn" type="submit"></button>
-              </form>
-            </div>
-
-            <div class="custom_menu-btn">
-              <button onclick="openNav()">
-                <span class="s-1">
-
-                </span>
-                <span class="s-2">
-
-                </span>
-                <span class="s-3">
-
-                </span>
-              </button>
-            </div>
-            <div id="myNav" class="overlay">
-              <div class="overlay-content">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact Us</a>
-              </div>
-            </div>
+          <div class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li class="tab">
+                <a href="#lab4">Lab4</a>
+                <ul class="sub_tab">
+                  <li><a href="#requirement">Requirement</a></li>
+                  <li><a href="#design">Design</a></li>
+                  <li><a href="#implement">Implement</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
     </header>
     <!-- end header section -->
+
     <!-- slider section -->
     <section class="slider_section">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -230,35 +218,182 @@
 
     </section>
     <!-- end slider section -->
+
+
+    <!-- about section -->
+
+    <section class="about_section layout_padding">
+      <div class="container">
+        <div class="detail-box">
+          <div class="heading_container">
+            <h2>
+              About Me
+            </h2>
+          </div>
+          <div class="about">
+            <div class="about_info">
+              <p>
+                <b>Trường Đại học Nông Lâm thành phố Hồ Chí Minh </b>
+                <br>Name: Lê Thị Thúy Kiều
+                <br>FACULTY OF INFORMATION TECHNOLOGY
+                <br>Class: DH22DTB
+                <br> Id: 22130137
+                <br>
+                <br>
+                My website is named 'Animal Rescue'.
+                <br>"Animals are loyal companions; love them as they love you."
+              </p>
+            </div>
+            <div class="about_img">
+              <img src="images/personal_pic.jpg" alt="personal_pic">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end about section -->
+
+    <!-- requirement section  -->
+    <section id="requirement">
+      <div class="container">
+        <h2><b>
+            Lab 4</b>
+        </h2>
+        <p></p>
+        <div class="yeu_cau">
+          <p class="tab_p">Requirement</p>
+          <p style="line-height: 30px;padding: 10px;">
+            Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như <b>lớp môn học, giảng viên,… </b>
+            <br>Sau đó thiết kế chức năng Quản lý đối tượng đó trên html bao gồm các tính năng <b>thêm, sửa, xóa, tìm
+              kiếm</b> cho đối tượng đó
+            <br>Ví dụ, làm chức năng <b>Quản lý Sinh viên,</b> bao gôm tính năng thêm, sửa, xóa, tìm kiếm.
+          </p>
+          <p style="color: red; padding: 10px;">Chú ý: Các thành viên trong lớp, trong nhóm không được chọn các đối
+            tượng giống nhau.</p>
+        </div>
+      </div>
+    </section>
+    <!-- end requirement section -->
+
+    <!-- design section -->
+    <section id="design">
+      <div class="container">
+        <h2><b>
+            Lab 4</b>
+        </h2>
+        <p></p>
+        <div class="link">
+          <p class="tab_p">Design</p>
+          <div class="container_download">
+            <a href="images/img_design_on_paper.jpg">Ảnh thiết kế trên giấy chức năng quản lý vật nuôi</a>
+            <button class="download-button"><i class="fas fa-download"></i> Download</button>
+          </div>
+          <div class="container_download">
+           <a href="images/img_chup_man_hinh.PNG">Ảnh chụp màn hình thiết kế chức năng quản lý vật nuôi trên HTML</a>
+           <button class="download-button"><i class="fas fa-download"></i> Download</button>
+            <button class="download-button"><a href="https://www.figma.com/">Go to Figma</a></button>
+          </div>
+        </div>
+      </div>
   </div>
+  </section>
 
-  <!-- about section -->
-
-  <section class="about_section layout_padding">
+  <!-- quan ly vat nuoi section -->
+  <section id="implement">
     <div class="container">
-      <div class="detail-box">
-        <div class="heading_container">
-          <img src="images/heading-img.png" alt="">
-          <h2>
-            About Us
-          </h2>
+      <h2><b>
+          Lab 4</b>
+      </h2>
+      <p class="tab_p">Implement</p>
+      <div class="object">
+        <p class="object_name">Quản lý vật nuôi</p>
+        <div class="input_button">
+          <input step="text" class="form-control" placeholder="Nhập vào tìm kiếm...">
+          <button class="button"><i class="fas fa-search"></i> Tìm kiếm</button>
+          <button class="button"><i class="fas fa-plus"></i> Thêm</button>
         </div>
-        <p>
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-        </p>
-        <div class="btn-box">
-          <a href="">
-            <span>
-              Read More
-            </span>
-            <img src="images/link-arrow.png" alt="">
-          </a>
-        </div>
+        <p> </p>
+        <table>
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>TÊN VẬT NUÔI</th>
+              <th>NGÀY NHẬN NUÔI</th>
+              <th>GIỚI TÍNH</th>
+              <th>TÌNH TRẠNG SỨC KHỎE</th>
+              <th>NGƯỜI NHẬN NUÔI</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Chó Lucky</td>
+              <td>11/03/2020</td>
+              <td>Đực</td>
+              <td>Bình thường</td>
+              <td>Mr Throme</td>
+              <td>
+                <button class="button"><i class="fas fa-edit"></i>Sửa</button>
+                <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Chó Tigeress</td>
+              <td>15/06/2019</td>
+              <td>Cái</td>
+              <td>Bình thường</td>
+              <td>Mrs Mi</td>
+              <td>
+                <button class="button"><i class="fas fa-edit"></i>Sửa</button>
+                <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Chó Poodle</td>
+              <td>08/02/2021</td>
+              <td>Đực</td>
+              <td>Cần điều trị</td>
+              <td>Mr Huynh</td>
+              <td>
+                <button class="button"><i class="fas fa-edit"></i>Sửa</button>
+                <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Mèo Stripes</td>
+              <td>02/02/2023</td>
+              <td>Cái</td>
+              <td>Bình thường</td>
+              <td>Mrs Yen</td>
+              <td>
+                <button class="button"><i class="fas fa-edit"></i>Sửa</button>
+                <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td> Mèo Po</td>
+              <td>05/04/2022</td>
+              <td>Cái</td>
+              <td>Cần điều trị</td>
+              <td>Mr Tomy</td>
+              <td>
+                <button class="button"><i class="fas fa-edit"></i>Sửa</button>
+                <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p></p>
       </div>
     </div>
   </section>
-
-  <!-- end about section -->
+  <!-- end quan ly vat nuoi section -->
 
   <!-- animal section -->
 
@@ -342,7 +477,9 @@
               </h2>
             </div>
             <p>
-              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+              It is a long established fact that a reader will be distracted by the readable content of a page when
+              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+              of letters,
             </p>
             <div class="btn-box">
               <a href="">
@@ -362,54 +499,54 @@
 
   <!-- us section -->
 
-  <section class="us_section layout_padding-bottom">
+  <section class="us_section layout_padding">
     <div class="container">
       <div class="heading_container">
         <img src="images/heading-img.png" alt="">
         <h2>
-          Why Choose Us
+          Journey of Rescue, Love for Animals!
         </h2>
         <p>
-          It is a long established fact that a reader will be distracted by the readable content of a
+          Find your new best friend
         </p>
       </div>
       <div class="us_container">
         <div class="box">
           <div class="img1-box">
-            <img src="images/pet1.png" alt="">
+            <img src="images/meo.jpg" alt="" style="width: 281px;height: 290px;">
           </div>
           <div class="img2-box">
             <img src="images/omega.png" alt="">
           </div>
           <div class="detail-box">
             <h6>
-              PET NUTRITIONISTS
+              Stripes
             </h6>
           </div>
         </div>
         <div class="box">
           <div class="img1-box">
-            <img src="images/pet2.png" alt="">
+            <img src="images/cho.jpg" alt="" style="width: 281px;height: 290px;">
           </div>
           <div class="img2-box">
             <img src="images/dog.png" alt="">
           </div>
           <div class="detail-box">
             <h6>
-              STANDARDS
+              tigeress
             </h6>
           </div>
         </div>
         <div class="box">
           <div class="img1-box">
-            <img src="images/pet2.png" alt="">
+            <img src="images/meo2.jpg" alt="" style="width: 281px;height: 290px;">
           </div>
           <div class="img2-box">
             <img src="images/shield.png" alt="">
           </div>
           <div class="detail-box">
             <h6>
-              QUALITY & SAFETY
+              Po
             </h6>
           </div>
         </div>
@@ -521,7 +658,8 @@
                   Jack Mengo
                 </h4>
                 <p>
-                  It is a long established fact that a reader will be distracted by the readable cIt is a long established fact that a reader will be distracted by the readable c
+                  It is a long established fact that a reader will be distracted by the readable cIt is a long
+                  established fact that a reader will be distracted by the readable c
                 </p>
                 <img src="images/quote.png" alt="">
               </div>
@@ -537,7 +675,8 @@
                   Jack Mengo
                 </h4>
                 <p>
-                  It is a long established fact that a reader will be distracted by the readable cIt is a long established fact that a reader will be distracted by the readable c
+                  It is a long established fact that a reader will be distracted by the readable cIt is a long
+                  established fact that a reader will be distracted by the readable c
                 </p>
                 <img src="images/quote.png" alt="">
               </div>
@@ -553,7 +692,8 @@
                   Jack Mengo
                 </h4>
                 <p>
-                  It is a long established fact that a reader will be distracted by the readable cIt is a long established fact that a reader will be distracted by the readable c
+                  It is a long established fact that a reader will be distracted by the readable cIt is a long
+                  established fact that a reader will be distracted by the readable c
                 </p>
                 <img src="images/quote.png" alt="">
               </div>
@@ -614,7 +754,10 @@
         <div class="col-md-6 px-0">
           <div class="map_container">
             <div class="map-responsive">
-              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%" allowfullscreen></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
+                width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%"
+                allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -643,7 +786,7 @@
             <div>
               <img src="images/mail.png" alt="" />
               <p>
-                demo@gmail.com
+                22130137@st.hcmuaf.edu.vn
               </p>
             </div>
           </div>
@@ -651,7 +794,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="info_time">
             <h5>
-              Opening Hours Shop
+              Time work
             </h5>
             <div>
               <p>
@@ -660,7 +803,7 @@
             </div>
             <div>
               <p>
-                07:00 am to 04:00 pm
+                07:00 am to 05:00 pm
               </p>
             </div>
           </div>
@@ -718,12 +861,12 @@
   <!-- footer section -->
   <section class="container-fluid footer_section ">
     <p>
-      &copy; 2019 All Rights Reserved. Design by
-      <a href="https://html.design/">Free Html Templates</a>
+      &copy; Copyright 2023 by Thúy Kiều. All Rights Reserved.
+      <br><a href="#">22130137@st.hcmuaf.edu.vn</a>
     </p>
   </section>
   <!-- end  footer section -->
-
+  </div>
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
