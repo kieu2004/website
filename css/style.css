@@ -220,6 +220,12 @@ a:focus {
   top: 7px;
 }
 
+.menu{
+  position: fixed;
+  z-index: 999;
+  right:20px;
+}
+
 .menu_list{
   list-style: none;
   padding: 0;
