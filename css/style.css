@@ -117,14 +117,32 @@ a:focus {
   color: initial;
 }
 
-.btn,
-.btn:focus {
+/* .hero_area .header_section .container-fluid .navbar .menu{
   outline: none !important;
   -webkit-box-shadow: none;
   box-shadow: none;
+} */
+
+.menu {
+  display: block;
 }
 
-.custom_nav-container .nav_search-btn {
+.hamburger-menu {
+  display: none;
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hamburger-menu {
+      display: block;
+  }
+
+  .menu {
+      display: none;
+  }
+}
+
+/* .custom_nav-container .nav_search-btn {
   background-image: url(../images/search-icon.png);
   background-size: 17px;
   background-repeat: no-repeat;
@@ -133,7 +151,7 @@ a:focus {
   height: 35px;
   padding: 0;
   border: none;
-}
+} */
 
 .navbar-brand {
   display: -webkit-box;
@@ -1282,6 +1300,30 @@ td {
 
 .footer_section a {
   color: #ffffff;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* display: none; */
+  padding: 10px;
+  background-color: #333333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #333333;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  background-color: transparent;
+}
+
+.footer_section .back-to-top{
+  color: rgb(255, 115, 0);
+  font-size: 30px;
 }
 
 /* end footer section*/
