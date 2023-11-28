@@ -16,7 +16,7 @@
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
@@ -35,13 +35,15 @@
           <a class="navbar-brand" href="index.html">
             <img src="images/logo.PNG" alt="">
           </a>
-          <div class="hamburger-menu">
-            <div> &#9776; </div>
+          <div class="hamburger-menu" onclick="myFunction(this)" tabindex="0">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
           <div class="menu">
             <ul class="menu_list">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+              <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
               <li>
                 <a href="#">Lab4</a>
                 <ul class="sub_menu">
@@ -50,7 +52,8 @@
                   <li><a href="#implement">Implement</a></li>
                 </ul>
               </li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="#user_scenario">Lab5</a></li>
+              <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
             </ul>
           </div>
         </nav>
@@ -92,7 +95,7 @@
                       <a href="" class="btn-1">
                         Read More
                       </a>
-                      <a href="" class="btn-2">
+                      <a href="contact.html" class="btn-2">
                         Contact Us
                       </a>
                     </div>
@@ -130,7 +133,7 @@
                       <a href="" class="btn-1">
                         Read More
                       </a>
-                      <a href="" class="btn-2">
+                      <a href="contact.html" class="btn-2">
                         Contact Us
                       </a>
                     </div>
@@ -168,7 +171,7 @@
                       <a href="" class="btn-1">
                         Read More
                       </a>
-                      <a href="" class="btn-2">
+                      <a href="contact.html" class="btn-2">
                         Contact Us
                       </a>
                     </div>
@@ -206,7 +209,7 @@
                       <a href="" class="btn-1">
                         Read More
                       </a>
-                      <a href="" class="btn-2">
+                      <a href="contact.html" class="btn-2">
                         Contact Us
                       </a>
                     </div>
@@ -305,7 +308,10 @@
             <a href="images/img_chup_man_hinh.PNG" download="img_chup_man_hinh.PNG">
               <button class="download-button"><i class="fas fa-download"></i> Download</button>
             </a>
-            <button class="download-button"><a href="https://www.figma.com/">Go to Figma</a></button>
+            <a
+              href="https://www.figma.com/file/1yGBGk62rNYxCqfrFbaYMI/html.to.design-(Community)?type=design&node-id=0%3A1&mode=design&t=GR5QlNS9oYqaV86u-1">
+              <button class="download-button">Go to Figma</button>
+            </a>
           </div>
         </div>
       </div>
@@ -408,8 +414,84 @@
   </section>
   <!-- end quan ly vat nuoi section -->
 
-  <!-- animal section -->
+  <!-- create user scenario -->
+  <section id="user_scenario">
+    <div class="container">
+      <h2><b>
+          Lab 5</b>
+      </h2>
+      <p></p>
+      <div class="yeu_cau" id="list_user_sceranio">
+        <p class="tab_p" style="color: red;"><b>User Scenario</b></p>
+        <p style="line-height: 30px;padding: 10px; ">
+          User Scenario cho trang web cứu hộ động vật:
+          <br>
+          Người dùng (User) là người muốn đăng ký thông tin về động vật cần cứu hộ. <br>
+          Họ đã thấy một con chó bị lạc trong khu vực của họ và muốn thông báo cho tổ chức cứu hộ.
+          <br>
+          1. Người dùng mở trang web cứu hộ động vật. <br>
+          2. Người dùng chọn tùy chọn "Đăng ký động vật cần cứu hộ". <br>
+          3.Họ điền thông tin chi tiết về động vật bị lạc: tên, mô tả, loại động vật, vị trí
+          hiện tại, và thông tin liên lạc của họ. <br>
+          4. Người dùng đính kèm hình ảnh của động vật. <br>
+          5. Sau khi điền đầy đủ thông tin, họ nhấn nút "Gửi" để đăng ký. <br>
+          6. Họ nhận được xác nhận và thông tin liên lạc từ tổ chức cứu hộ. <br>
+        </p>
+        <a
+          href="https://www.figma.com/file/1yGBGk62rNYxCqfrFbaYMI/html.to.design-(Community)?type=design&node-id=0%3A1&mode=design&t=GR5QlNS9oYqaV86u-1">Go
+          to Figma
+        </a>
 
+      </div>
+    </div>
+  </section>
+  <!-- end user scenario -->
+
+  <!-- start user scenario (number) -->
+  <div class="main-container">
+    <section class="content">
+      <form action="process_form.php" method="post" enctype="multipart/form-data">
+        <h3><b>Đăng ký động vật cần cứu hộ</b></h3>
+
+        <label for="animal_name">Tên động vật:</label>
+        <input type="text" id="animal_name" name="animal_name" required>
+
+        <label for="description">Mô tả:</label>
+        <textarea id="description" name="description" rows="4" required></textarea>
+
+        <label class="select-wrapper" for="animal_type">
+          Loại động vật:
+          <select id="animal_type_select" name="animal_type_select" required>
+            <option value="Dog" selected>Chó</option>
+            <option value="Cat">Mèo</option>
+            <option value="Bird">Chim</option>
+          </select>
+          <input type="text" id="animal_type_input" name="animal_type_input" placeholder="Loại động vật" required>
+        </label>
+
+        <label for="location">Vị trí hiện tại:</label>
+        <input type="text" id="location" name="location" required>
+
+        <label for="contact_info">Thông tin liên lạc:</label>
+        <input type="text" id="contact_info" name="contact_info" required>
+
+        <label for="animal_image" class="file-upload">
+          <span class="file-upload-button">Ảnh vật nuôi</span>
+          <input type="file" id="animal_image" name="animal_image" accept="image/*" required>
+        </label>
+
+        <button type="submit">Gửi</button>
+      </form>
+    </section>
+
+    <div class="image">
+      <img src="images/nhan_nuoi.jpg" alt="Image 1">
+      <img src="images/nhan_nuoi_other.jpg" alt="Image 2">
+    </div>
+
+  </div>
+
+  <!-- animal section -->
   <section class="animal_section layout_padding">
     <div class="container">
       <div class="animal_container">
@@ -546,7 +628,7 @@
           </div>
           <div class="detail-box">
             <h6>
-              tigeress
+              Tigeress
             </h6>
           </div>
         </div>
@@ -877,10 +959,9 @@
       &copy; Copyright 2023 by Thúy Kiều. All Rights Reserved.
       <br><a href="#">22130137@st.hcmuaf.edu.vn</a>
     </p>
-    <a href="#" class="back-to-top">&#9651;</a>
+    <a href="#" class="back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
   </section>
   <!-- end  footer section -->
-  </div>
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
@@ -890,6 +971,17 @@
       document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
     }
   </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "menu") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
 
 </body>
 

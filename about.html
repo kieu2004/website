@@ -16,7 +16,7 @@
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
   <!-- Custom styles for this template -->
@@ -34,10 +34,15 @@
           <a class="navbar-brand" href="index.html">
             <img src="images/logo.PNG" alt="">
           </a>
+          <div class="hamburger-menu" onclick="myFunction(this)" tabindex="0">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
           <div class="menu">
             <ul class="menu_list">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+              <li><a href="about.html"><i class="fas fa fa-user"></i> About</a></li>
               <li>
                 <a href="#">Lab4</a>
                 <ul class="sub_menu">
@@ -46,7 +51,8 @@
                   <li><a href="index.html#implement">Implement</a></li>
                 </ul>
               </li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="index.html#user_scenario">Lab5</a></li>
+              <li><a href="contact.html"><i class="fas fa fa-envelope"></i> Contact Us</a></li>
             </ul>
           </div>
         </nav>
@@ -318,14 +324,26 @@
       &copy; Copyright 2023 by Thúy Kiều. All Rights Reserved.
       <br><a href="#">22130137@st.hcmuaf.edu.vn</a>
     </p>
+    <a href="#" class="back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
   </section>
   <!-- end  footer section -->
+
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script>
     function openNav() {
       document.getElementById("myNav").classList.toggle("menu_width")
       document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    }
+  </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "menu") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
     }
   </script>
 
