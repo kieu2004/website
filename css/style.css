@@ -319,7 +319,6 @@ a:focus {
 }
 
 .sub_menu li a:hover {
-  /* background-color: #e76b19; */
   color: red;
 }
 
