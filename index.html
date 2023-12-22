@@ -53,6 +53,25 @@
                 </ul>
               </li>
               <li><a href="#user_scenario">Lab5</a></li>
+              <li>
+                <a href="#">Lab6</a>
+                <ul class="sub_menu">
+                  <li>
+                    <a href="ex1.html">Ex1</a>
+                    <ul class="sub_menu_2">
+                      <li><a href="#lab6_design">Design</a></li>
+                      <li><a href="ex1.html">Implement</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="ex2.html">Ex2</a>
+                    <ul class="sub_menu_2">
+                      <li><a href="#lab6_design">Design</a></li>
+                      <li><a href="ex2.html">Implement</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
               <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
             </ul>
           </div>
@@ -315,672 +334,705 @@
           </div>
         </div>
       </div>
-  </div>
-  </section>
-
-  <!-- quan ly vat nuoi section -->
-  <section id="implement">
-    <div class="container">
-      <h2><b>
-          Lab 4</b>
-      </h2>
-      <p class="tab_p">Implement</p>
-      <div class="object">
-        <p class="object_name">Quản lý vật nuôi</p>
-        <div class="input_button">
-          <input step="text" class="form-control" placeholder="Nhập vào tìm kiếm...">
-          <button class="button"><i class="fas fa-search"></i> Tìm kiếm</button>
-          <button class="button"><i class="fas fa-plus"></i> Thêm</button>
-        </div>
-        <p> </p>
-        <table>
-          <thead>
-            <tr>
-              <th>STT</th>
-              <th>TÊN VẬT NUÔI</th>
-              <th>NGÀY NHẬN NUÔI</th>
-              <th>GIỚI TÍNH</th>
-              <th>TÌNH TRẠNG SỨC KHỎE</th>
-              <th>NGƯỜI NHẬN NUÔI</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Chó Lucky</td>
-              <td>11/03/2020</td>
-              <td>Đực</td>
-              <td>Bình thường</td>
-              <td>Mr Throme</td>
-              <td>
-                <button class="button"><i class="fas fa-edit"></i>Sửa</button>
-                <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
-              </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Chó Tigeress</td>
-              <td>15/06/2019</td>
-              <td>Cái</td>
-              <td>Bình thường</td>
-              <td>Mrs Mi</td>
-              <td>
-                <button class="button"><i class="fas fa-edit"></i>Sửa</button>
-                <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
-              </td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Chó Poodle</td>
-              <td>08/02/2021</td>
-              <td>Đực</td>
-              <td>Cần điều trị</td>
-              <td>Mr Huynh</td>
-              <td>
-                <button class="button"><i class="fas fa-edit"></i>Sửa</button>
-                <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
-              </td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Mèo Stripes</td>
-              <td>02/02/2023</td>
-              <td>Cái</td>
-              <td>Bình thường</td>
-              <td>Mrs Yen</td>
-              <td>
-                <button class="button"><i class="fas fa-edit"></i>Sửa</button>
-                <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
-              </td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td> Mèo Po</td>
-              <td>05/04/2022</td>
-              <td>Cái</td>
-              <td>Cần điều trị</td>
-              <td>Mr Tomy</td>
-              <td>
-                <button class="button"><i class="fas fa-edit"></i>Sửa</button>
-                <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <p></p>
-      </div>
-    </div>
-  </section>
-  <!-- end quan ly vat nuoi section -->
-
-  <!-- create user scenario -->
-  <section id="user_scenario">
-    <div class="container">
-      <h2><b>
-          Lab 5</b>
-      </h2>
-      <p></p>
-      <div class="yeu_cau" id="list_user_sceranio">
-        <p class="tab_p" style="color: red;"><b>User Scenario</b></p>
-        <p style="line-height: 30px;padding: 10px; ">
-          User Scenario cho trang web cứu hộ động vật:
-          <br>
-          Người dùng (User) là người muốn đăng ký thông tin về động vật cần cứu hộ. <br>
-          Họ đã thấy một con chó bị lạc trong khu vực của họ và muốn thông báo cho tổ chức cứu hộ.
-          <br>
-          1. Người dùng mở trang web cứu hộ động vật. <br>
-          2. Người dùng chọn tùy chọn "Đăng ký động vật cần cứu hộ". <br>
-          3.Họ điền thông tin chi tiết về động vật bị lạc: tên, mô tả, loại động vật, vị trí
-          hiện tại, và thông tin liên lạc của họ. <br>
-          4. Người dùng đính kèm hình ảnh của động vật. <br>
-          5. Sau khi điền đầy đủ thông tin, họ nhấn nút "Gửi" để đăng ký. <br>
-          6. Họ nhận được xác nhận và thông tin liên lạc từ tổ chức cứu hộ. <br>
-        </p>
-        <a
-          href="https://www.figma.com/file/mrlMU12ZD4YN6kMlLXnxpx/Pet-registration-form?type=design&node-id=0-1&mode=design&t=IOH52OBTDtSK73Hb-0">Go
-          to Figma
-        </a>
-
-      </div>
-    </div>
-  </section>
-  <!-- end user scenario -->
-
-  <!-- start user scenario (number) -->
-  <div class="main-container">
-    <section class="content">
-      <form action="process_form.php" method="post" enctype="multipart/form-data">
-        <h3><b>Đăng ký động vật cần cứu hộ</b></h3>
-
-        <label for="animal_name">Tên động vật:</label>
-        <input type="text" id="animal_name" name="animal_name" required>
-
-        <label for="description">Mô tả:</label>
-        <textarea id="description" name="description" rows="4" required></textarea>
-
-        <label class="select-wrapper" for="animal_type">
-          Loại động vật:
-          <select id="animal_type_select" name="animal_type_select" required>
-            <option value="Dog" selected>Chó</option>
-            <option value="Cat">Mèo</option>
-            <option value="Bird">Chim</option>
-          </select>
-          <input type="text" id="animal_type_input" name="animal_type_input" placeholder="Loại động vật" required>
-        </label>
-
-        <label for="location">Vị trí hiện tại:</label>
-        <input type="text" id="location" name="location" required>
-
-        <label for="contact_info">Thông tin liên lạc:</label>
-        <input type="text" id="contact_info" name="contact_info" required>
-
-        <label for="animal_image" class="file-upload">
-          <span class="file-upload-button">Ảnh vật nuôi</span>
-          <input type="file" id="animal_image" name="animal_image" accept="image/*" required>
-        </label>
-
-        <button type="submit">Gửi</button>
-      </form>
     </section>
 
-    <div class="image">
-      <img src="images/nhan_nuoi.jpg" alt="Image 1">
-      <img src="images/nhan_nuoi_other.jpg" alt="Image 2">
+    <!-- quan ly vat nuoi section -->
+    <section id="implement">
+      <div class="container">
+        <h2><b>
+            Lab 4</b>
+        </h2>
+        <p class="tab_p">Implement</p>
+        <div class="object">
+          <p class="object_name">Quản lý vật nuôi</p>
+          <div class="input_button">
+            <input step="text" class="form-control" placeholder="Nhập vào tìm kiếm...">
+            <button class="button"><i class="fas fa-search"></i> Tìm kiếm</button>
+            <button class="button"><i class="fas fa-plus"></i> Thêm</button>
+          </div>
+          <p> </p>
+          <table>
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>TÊN VẬT NUÔI</th>
+                <th>NGÀY NHẬN NUÔI</th>
+                <th>GIỚI TÍNH</th>
+                <th>TÌNH TRẠNG SỨC KHỎE</th>
+                <th>NGƯỜI NHẬN NUÔI</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Chó Lucky</td>
+                <td>11/03/2020</td>
+                <td>Đực</td>
+                <td>Bình thường</td>
+                <td>Mr Throme</td>
+                <td>
+                  <button class="button"><i class="fas fa-edit"></i>Sửa</button>
+                  <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Chó Tigeress</td>
+                <td>15/06/2019</td>
+                <td>Cái</td>
+                <td>Bình thường</td>
+                <td>Mrs Mi</td>
+                <td>
+                  <button class="button"><i class="fas fa-edit"></i>Sửa</button>
+                  <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Chó Poodle</td>
+                <td>08/02/2021</td>
+                <td>Đực</td>
+                <td>Cần điều trị</td>
+                <td>Mr Huynh</td>
+                <td>
+                  <button class="button"><i class="fas fa-edit"></i>Sửa</button>
+                  <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Mèo Stripes</td>
+                <td>02/02/2023</td>
+                <td>Cái</td>
+                <td>Bình thường</td>
+                <td>Mrs Yen</td>
+                <td>
+                  <button class="button"><i class="fas fa-edit"></i>Sửa</button>
+                  <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td> Mèo Po</td>
+                <td>05/04/2022</td>
+                <td>Cái</td>
+                <td>Cần điều trị</td>
+                <td>Mr Tomy</td>
+                <td>
+                  <button class="button"><i class="fas fa-edit"></i>Sửa</button>
+                  <button class="button"><i class="fas fa-trash-alt"></i>Xóa</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p></p>
+        </div>
+      </div>
+    </section>
+    <!-- end quan ly vat nuoi section -->
+
+    <!-- create user scenario -->
+    <section id="user_scenario">
+      <div class="container">
+        <h2><b>
+            Lab 5</b>
+        </h2>
+        <p></p>
+        <div class="yeu_cau" id="list_user_sceranio">
+          <p class="tab_p" style="color: red;"><b>User Scenario</b></p>
+          <p style="line-height: 30px;padding: 10px; ">
+            User Scenario cho trang web cứu hộ động vật:
+            <br>
+            Người dùng (User) là người muốn đăng ký thông tin về động vật cần cứu hộ. <br>
+            Họ đã thấy một con chó bị lạc trong khu vực của họ và muốn thông báo cho tổ chức cứu hộ.
+            <br>
+            1. Người dùng mở trang web cứu hộ động vật. <br>
+            2. Người dùng chọn tùy chọn "Đăng ký động vật cần cứu hộ". <br>
+            3.Họ điền thông tin chi tiết về động vật bị lạc: tên, mô tả, loại động vật, vị trí
+            hiện tại, và thông tin liên lạc của họ. <br>
+            4. Người dùng đính kèm hình ảnh của động vật. <br>
+            5. Sau khi điền đầy đủ thông tin, họ nhấn nút "Gửi" để đăng ký. <br>
+            6. Họ nhận được xác nhận và thông tin liên lạc từ tổ chức cứu hộ. <br>
+          </p>
+          <a
+            href="https://www.figma.com/file/mrlMU12ZD4YN6kMlLXnxpx/Pet-registration-form?type=design&node-id=0-1&mode=design&t=IOH52OBTDtSK73Hb-0">Go
+            to Figma
+          </a>
+
+        </div>
+      </div>
+    </section>
+    <!-- end user scenario -->
+
+    <!-- start user scenario (number) -->
+    <div class="main-container">
+      <section class="content">
+        <form action="process_form.php" method="post" enctype="multipart/form-data">
+          <h3><b>Đăng ký động vật cần cứu hộ</b></h3>
+
+          <label for="animal_name">Tên động vật:</label>
+          <input type="text" id="animal_name" name="animal_name" required>
+
+          <label for="description">Mô tả:</label>
+          <textarea id="description" name="description" rows="4" required></textarea>
+
+          <label class="select-wrapper" for="animal_type">
+            Loại động vật:
+            <select id="animal_type_select" name="animal_type_select" required>
+              <option value="Dog" selected>Chó</option>
+              <option value="Cat">Mèo</option>
+              <option value="Bird">Chim</option>
+            </select>
+            <input type="text" id="animal_type_input" name="animal_type_input" placeholder="Loại động vật" required>
+          </label>
+
+          <label for="location">Vị trí hiện tại:</label>
+          <input type="text" id="location" name="location" required>
+
+          <label for="contact_info">Thông tin liên lạc:</label>
+          <input type="text" id="contact_info" name="contact_info" required>
+
+          <label for="animal_image" class="file-upload">
+            <span class="file-upload-button">Ảnh vật nuôi</span>
+            <input type="file" id="animal_image" name="animal_image" accept="image/*" required>
+          </label>
+
+          <button type="submit">Gửi</button>
+        </form>
+      </section>
+
+      <div class="image">
+        <img src="images/nhan_nuoi.jpg" alt="Image 1">
+        <img src="images/nhan_nuoi_other.jpg" alt="Image 2">
+      </div>
+
     </div>
+    <!-- end user scenario (number) -->
 
-  </div>
-
-  <!-- animal section -->
-  <section class="animal_section layout_padding">
-    <div class="container">
-      <div class="animal_container">
-        <div class="box b1">
-          <div class="img-box">
-            <img src="images/dog.jpg" alt="">
+    <!-- start lab6 -->
+    <section id="lab6_design">
+      <div class="container">
+        <h2><b>
+            Lab 6</b>
+        </h2>
+        <p></p>
+        <div class="link">
+          <p class="tab_p">Design</p>
+          <div class="container_download">
+            <a href="images/img_design_on_paper.jpg">Ảnh thiết kế web Ex1 (Web về Phim hoạt hình)</a>
+            <a href="images/img_design_on_paper.jpg" download="img_design_on_paper.jpg">
+              <button class="download-button"><i class="fas fa-download"></i> Download</button>
+            </a>
           </div>
-          <div class="detail-box">
-            <h5>
-              Cute Dog
-            </h5>
-            <p>
-              It is a long established fact that a reader will be distracted by
-            </p>
-          </div>
-        </div>
-        <div class="box b2">
-          <div class="img-box">
-            <img src="images/bird.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Birds
-            </h5>
-            <p>
-              It is a long established fact that a reader will be distracted by
-            </p>
-          </div>
-        </div>
-        <div class="box b1">
-          <div class="img-box">
-            <img src="images/fish.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Fish
-            </h5>
-            <p>
-              It is a long established fact that a reader will be distracted by
-            </p>
-          </div>
-        </div>
-        <div class="box b2">
-          <div class="img-box">
-            <img src="images/cat.jpg" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Cat Bite
-            </h5>
-            <p>
-              It is a long established fact that a reader will be distracted by
-            </p>
+          <div class="container_download">
+            <a href="images/img_chup_man_hinh.PNG">Ảnh thiết kế web Ex2 (Web về cửa hàng thức ăn healthy)</a>
+            <a href="images/img_chup_man_hinh.PNG" download="img_chup_man_hinh.PNG">
+              <button class="download-button"><i class="fas fa-download"></i> Download</button>
+            </a>
+            <a
+              href="https://www.figma.com/file/tmArJWOp6IZAWjzqfZrRhJ/Untitled?type=design&node-id=1-2&mode=design&t=O32PSsdgun9D9dxE-0">
+              <button class="download-button">Go to Figma</button>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end animal section -->
 
-  <!-- pet section -->
 
-  <section class="pet_section layout_padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="img-box">
-            <img src="images/pet-img.png" alt="">
+    <!-- end lab6 -->
+
+    <!-- animal section -->
+    <section class="animal_section layout_padding">
+      <div class="container">
+        <div class="animal_container">
+          <div class="box b1">
+            <div class="img-box">
+              <img src="images/dog.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Cute Dog
+              </h5>
+              <p>
+                It is a long established fact that a reader will be distracted by
+              </p>
+            </div>
+          </div>
+          <div class="box b2">
+            <div class="img-box">
+              <img src="images/bird.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Birds
+              </h5>
+              <p>
+                It is a long established fact that a reader will be distracted by
+              </p>
+            </div>
+          </div>
+          <div class="box b1">
+            <div class="img-box">
+              <img src="images/fish.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Fish
+              </h5>
+              <p>
+                It is a long established fact that a reader will be distracted by
+              </p>
+            </div>
+          </div>
+          <div class="box b2">
+            <div class="img-box">
+              <img src="images/cat.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Cat Bite
+              </h5>
+              <p>
+                It is a long established fact that a reader will be distracted by
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <img src="images/heading-img.png" alt="">
-              <h2>
-                Caring for your pets
-              </h2>
+      </div>
+    </section>
+
+    <!-- end animal section -->
+
+    <!-- pet section -->
+
+    <section class="pet_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="images/pet-img.png" alt="">
             </div>
-            <p>
-              It is a long established fact that a reader will be distracted by the readable content of a page when
-              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-              of letters,
-            </p>
-            <div class="btn-box">
+          </div>
+          <div class="col-md-6">
+            <div class="detail-box">
+              <div class="heading_container">
+                <img src="images/heading-img.png" alt="">
+                <h2>
+                  Caring for your pets
+                </h2>
+              </div>
+              <p>
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+                of letters,
+              </p>
+              <div class="btn-box">
+                <a href="">
+                  <span>
+                    Read More
+                  </span>
+                  <img src="images/link-arrow.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end pet section -->
+
+    <!-- us section -->
+
+    <section class="us_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <img src="images/heading-img.png" alt="">
+          <h2>
+            Journey of Rescue, Love for Animals!
+          </h2>
+          <p>
+            Find your new best friend
+          </p>
+        </div>
+        <div class="us_container">
+          <div class="box">
+            <div class="img1-box">
+              <img src="images/meo.jpg" alt="" style="width: 281px;height: 290px;">
+            </div>
+            <div class="img2-box">
+              <img src="images/omega.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Stripes
+              </h6>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img1-box">
+              <img src="images/cho.jpg" alt="" style="width: 281px;height: 290px;">
+            </div>
+            <div class="img2-box">
+              <img src="images/dog.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Tigeress
+              </h6>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img1-box">
+              <img src="images/meo2.jpg" alt="" style="width: 281px;height: 290px;">
+            </div>
+            <div class="img2-box">
+              <img src="images/shield.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Po
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <a href="">
+            <span>
+              Read More
+            </span>
+            <img src="images/link-arrow.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- end us section -->
+
+    <!-- food section -->
+
+    <section class="food_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <img src="images/heading-img.png" alt="">
+          <h2>
+            Our Dog Food
+          </h2>
+          <p>
+            It is a long established fact that a reader will be distracted by the readable content of a
+          </p>
+        </div>
+        <div class="food_container">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/f1.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Basic
+              </h6>
+              <h3>
+                <span>$</span>100
+              </h3>
               <a href="">
-                <span>
-                  Read More
-                </span>
-                <img src="images/link-arrow.png" alt="">
+                Buy Now
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-box">
+              <img src="images/f2.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Medium
+              </h6>
+              <h3>
+                <span>$</span>200
+              </h3>
+              <a href="">
+                Buy Now
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-box">
+              <img src="images/f3.png" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Standard
+              </h6>
+              <h3>
+                <span>$</span>300
+              </h3>
+              <a href="">
+                Buy Now
               </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end pet section -->
 
-  <!-- us section -->
+    <!-- end food section -->
 
-  <section class="us_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <img src="images/heading-img.png" alt="">
-        <h2>
-          Journey of Rescue, Love for Animals!
-        </h2>
-        <p>
-          Find your new best friend
-        </p>
-      </div>
-      <div class="us_container">
-        <div class="box">
-          <div class="img1-box">
-            <img src="images/meo.jpg" alt="" style="width: 281px;height: 290px;">
-          </div>
-          <div class="img2-box">
-            <img src="images/omega.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              Stripes
-            </h6>
-          </div>
+    <!-- client section -->
+
+    <section class="client_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <img src="images/heading-img.png" alt="">
+          <h2>
+            What Says Our Customer
+          </h2>
+          <p>
+            It is a long established fact that a reader will be distracted by the
+          </p>
         </div>
-        <div class="box">
-          <div class="img1-box">
-            <img src="images/cho.jpg" alt="" style="width: 281px;height: 290px;">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/client.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h4>
+                    Jack Mengo
+                  </h4>
+                  <p>
+                    It is a long established fact that a reader will be distracted by the readable cIt is a long
+                    established fact that a reader will be distracted by the readable c
+                  </p>
+                  <img src="images/quote.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/client.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h4>
+                    Jack Mengo
+                  </h4>
+                  <p>
+                    It is a long established fact that a reader will be distracted by the readable cIt is a long
+                    established fact that a reader will be distracted by the readable c
+                  </p>
+                  <img src="images/quote.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/client.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h4>
+                    Jack Mengo
+                  </h4>
+                  <p>
+                    It is a long established fact that a reader will be distracted by the readable cIt is a long
+                    established fact that a reader will be distracted by the readable c
+                  </p>
+                  <img src="images/quote.png" alt="">
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="img2-box">
-            <img src="images/dog.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              Tigeress
-            </h6>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img1-box">
-            <img src="images/meo2.jpg" alt="" style="width: 281px;height: 290px;">
-          </div>
-          <div class="img2-box">
-            <img src="images/shield.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              Po
-            </h6>
-          </div>
-        </div>
-      </div>
-      <div class="btn-box">
-        <a href="">
-          <span>
-            Read More
-          </span>
-          <img src="images/link-arrow.png" alt="">
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- end us section -->
-
-  <!-- food section -->
-
-  <section class="food_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <img src="images/heading-img.png" alt="">
-        <h2>
-          Our Dog Food
-        </h2>
-        <p>
-          It is a long established fact that a reader will be distracted by the readable content of a
-        </p>
-      </div>
-      <div class="food_container">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/f1.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              Basic
-            </h6>
-            <h3>
-              <span>$</span>100
-            </h3>
-            <a href="">
-              Buy Now
+          <div class="carousel_btn-box">
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="sr-only">Previous</span>
             </a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/f2.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              Medium
-            </h6>
-            <h3>
-              <span>$</span>200
-            </h3>
-            <a href="">
-              Buy Now
-            </a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="img-box">
-            <img src="images/f3.png" alt="">
-          </div>
-          <div class="detail-box">
-            <h6>
-              Standard
-            </h6>
-            <h3>
-              <span>$</span>300
-            </h3>
-            <a href="">
-              Buy Now
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="sr-only">Next</span>
             </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- end client section -->
 
-  <!-- end food section -->
+    <!-- contact section -->
 
-  <!-- client section -->
-
-  <section class="client_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <img src="images/heading-img.png" alt="">
-        <h2>
-          What Says Our Customer
-        </h2>
-        <p>
-          It is a long established fact that a reader will be distracted by the
-        </p>
-      </div>
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/client.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h4>
-                  Jack Mengo
-                </h4>
+    <section class="contact_section layout_padding-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-5 offset-md-1">
+            <div class="form_container">
+              <div class="heading_container">
+                <img src="images/heading-img.png" alt="">
+                <h2>
+                  Contact info
+                </h2>
                 <p>
-                  It is a long established fact that a reader will be distracted by the readable cIt is a long
-                  established fact that a reader will be distracted by the readable c
+                  So that we can contact you, please fill in the following contact form:
                 </p>
-                <img src="images/quote.png" alt="">
               </div>
+              <form action="">
+                <div>
+                  <input type="text" placeholder="Full Name " />
+                </div>
+                <div>
+                  <input type="text" placeholder="Phone number" />
+                </div>
+                <div>
+                  <input type="email" placeholder="Email" />
+                </div>
+                <div>
+                  <input type="text" class="message-box" placeholder="Message" />
+                </div>
+                <div class="d-flex ">
+                  <button>
+                    SEND
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/client.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h4>
-                  Jack Mengo
-                </h4>
-                <p>
-                  It is a long established fact that a reader will be distracted by the readable cIt is a long
-                  established fact that a reader will be distracted by the readable c
-                </p>
-                <img src="images/quote.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/client.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h4>
-                  Jack Mengo
-                </h4>
-                <p>
-                  It is a long established fact that a reader will be distracted by the readable cIt is a long
-                  established fact that a reader will be distracted by the readable c
-                </p>
-                <img src="images/quote.png" alt="">
+          <div class="col-md-6 px-0">
+            <div class="map_container">
+              <div class="map-responsive">
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
+                  width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%"
+                  allowfullscreen></iframe>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel_btn-box">
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end client section -->
+    <!-- end contact section -->
 
-  <!-- contact section -->
 
-  <section class="contact_section layout_padding-top">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-5 offset-md-1">
-          <div class="form_container">
-            <div class="heading_container">
-              <img src="images/heading-img.png" alt="">
-              <h2>
-                Contact info
-              </h2>
-              <p>
-                So that we can contact you, please fill in the following contact form:
-              </p>
+    <!-- info section -->
+    <section class="info_section ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="info_contact">
+              <h5>
+                CONTACT INFO
+              </h5>
+              <div>
+                <img src="images/call.png" alt="" />
+                <p>
+                  +01 1234567890
+                </p>
+              </div>
+              <div>
+                <img src="images/mail.png" alt="" />
+                <p>
+                  22130137@st.hcmuaf.edu.vn
+                </p>
+              </div>
             </div>
-            <form action="">
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_time">
+              <h5>
+                Time work
+              </h5>
               <div>
-                <input type="text" placeholder="Full Name " />
+                <p>
+                  Monday to friday
+                </p>
               </div>
               <div>
-                <input type="text" placeholder="Phone number" />
+                <p>
+                  07:00 am to 05:00 pm
+                </p>
               </div>
-              <div>
-                <input type="email" placeholder="Email" />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="info_social">
+              <h5>
+                social media
+              </h5>
+              <div class="social_container">
+                <div>
+                  <a href="">
+                    <img src="images/fb.png" alt="" />
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <img src="images/twitter.png" alt="" />
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <img src="images/linkedin.png" alt="" />
+                  </a>
+                </div>
+                <div>
+                  <a href="">
+                    <img src="images/instagram.png" alt="" />
+                  </a>
+                </div>
               </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="d-flex ">
-                <button>
-                  SEND
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_form pl-lg-4">
+              <h5>
+                Newsletter
+              </h5>
+              <form action="">
+                <input type="text" placeholder="Enter Your Email" />
+                <button type="submit">
+                  Subscribe
                 </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-6 px-0">
-          <div class="map_container">
-            <div class="map-responsive">
-              <iframe
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
-                width="600" height="300" frameborder="0" style="border:0; width: 100%; height:100%"
-                allowfullscreen></iframe>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end contact section -->
-
-
-  <!-- info section -->
-  <section class="info_section ">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-lg-3">
-          <div class="info_contact">
-            <h5>
-              CONTACT INFO
-            </h5>
-            <div>
-              <img src="images/call.png" alt="" />
-              <p>
-                +01 1234567890
-              </p>
-            </div>
-            <div>
-              <img src="images/mail.png" alt="" />
-              <p>
-                22130137@st.hcmuaf.edu.vn
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="info_time">
-            <h5>
-              Time work
-            </h5>
-            <div>
-              <p>
-                Monday to friday
-              </p>
-            </div>
-            <div>
-              <p>
-                07:00 am to 05:00 pm
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-3">
-          <div class="info_social">
-            <h5>
-              social media
-            </h5>
-            <div class="social_container">
-              <div>
-                <a href="">
-                  <img src="images/fb.png" alt="" />
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <img src="images/twitter.png" alt="" />
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <img src="images/linkedin.png" alt="" />
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <img src="images/instagram.png" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="info_form pl-lg-4">
-            <h5>
-              Newsletter
-            </h5>
-            <form action="">
-              <input type="text" placeholder="Enter Your Email" />
-              <button type="submit">
-                Subscribe
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end info_section -->
+    <!-- end info_section -->
 
 
-  <!-- footer section -->
-  <section class="container-fluid footer_section ">
-    <p>
-      &copy; Copyright 2023 by Thúy Kiều. All Rights Reserved.
-      <br><a href="#">22130137@st.hcmuaf.edu.vn</a>
-    </p>
-    <a href="#" class="back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-  </section>
-  <!-- end  footer section -->
+    <!-- footer section -->
+    <section class="container-fluid footer_section ">
+      <p>
+        &copy; Copyright 2023 by Thúy Kiều. All Rights Reserved.
+        <br><a href="#">22130137@st.hcmuaf.edu.vn</a>
+      </p>
+      <a href="#" class="back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    </section>
+    <!-- end  footer section -->
 
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script>
-    function openNav() {
-      document.getElementById("myNav").classList.toggle("menu_width")
-      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
-    }
-  </script>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "menu") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").classList.toggle("menu_width")
+        document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
       }
-    }
-  </script>
+    </script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "menu") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
 
 
 </body>

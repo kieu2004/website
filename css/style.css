@@ -265,7 +265,7 @@ a:focus {
 .menu {
   position: fixed;
   z-index: 999;
-  right: 20px;
+  right: 200px;
 }
 
 .menu_list {
@@ -291,7 +291,7 @@ a:focus {
   background-color: #e76b19;
 }
 
-.sub_menu {
+.sub_menu,.sub_menu_2 {
   display: none;
   position: absolute;
   top: 100%;
@@ -305,7 +305,7 @@ a:focus {
   display: block;
 }
 
-.sub_menu li {
+.sub_menu li,.sub_menu_2 li {
   display: block;
   margin-bottom: 5px;
   border-bottom: 1px solid #333232;
@@ -318,14 +318,21 @@ a:focus {
   border-bottom: none;
 }
 
-.sub_menu li:hover {
-  background-color: #e76b19;
+.sub_menu li a:hover {
+  /* background-color: #e76b19; */
+  color: red;
 }
 
-.sub_menu li a {
+.sub_menu li a,.sub_menu_2 li a {
   color: white;
   padding: 10px 15px;
   text-decoration: none;
+}
+
+.sub_menu>li:hover .sub_menu_2 {
+  display: block;
+  margin-left: 195px;
+  margin-top: -75px;
 }
 
 /*end header section*/
@@ -562,6 +569,8 @@ a:focus {
 }
 
 .main-container {
+  /* background: url(../images/bg1_mo.png) repeat ; 
+  background-size: 100%; */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -578,22 +587,11 @@ a:focus {
 }
 
 .content form {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding: 20px;
   border-radius: 8px;
+  background: url(../images/bg1_mo.png) repeat;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.content form::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('images/bg1.jpg');
-  opacity: 0.1;
-  z-index: -1;
 }
 
 .image {
@@ -610,7 +608,7 @@ a:focus {
 }
 
 .main-container {
-  background-image: url("images/bg.jpg");
+  background-image: url(../images/animal-bg.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -672,6 +670,7 @@ form select {
   width: calc(50% - 5px);
   display: inline-block;
   vertical-align: top;
+  margin-left: 30px;
 }
 
 #animal_type_input {
@@ -1058,7 +1057,6 @@ td {
 
 .container #list_user_sceranio {
   padding: 30px;
-  /* box-sizing: border-box; */
 }
 
 .container .yeu_cau a {

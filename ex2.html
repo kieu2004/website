@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Animal Rescue</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background-color: #ebeff3;
+        }
+
+        .header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 50px;
+        }
+
+        .logo img {
+            font-size: 20px;
+            width: 100px;
+            height: 100px;
+            /* font-weight: bold; */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #53d657;
+        }
+
+        .gioHang {
+            /* background-color: #4caf50; */
+            background-color: #b2b425e3;
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .gioHang:hover {
+            color: #4caf50;
+            border: 1px solid #4caf50;
+            background-color: transparent;
+        }
+
+        .main {
+            padding: 20px;
+            height: auto;
+            display: flex;
+        }
+
+        .hero {
+            padding: 50px 0;
+            background-image: url(images/bg_healthyFoodOther.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            color: #fcff40e3;
+            height: 700px;
+            display: block;
+        }
+
+        .content {
+            display: block;
+            text-align: left;
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: block;
+            margin-left: 4%;
+            margin-top: 120px;
+            font-size: 3.3rem;
+            text-transform: uppercase;
+            line-height: 80px;
+            letter-spacing: 1px;
+        }
+
+        .content h1 span {
+            display: block;
+        }
+
+        .content h1 span:last-child {
+            margin-left: 90px;
+        }
+
+        .content pre {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-top: 160px;
+            margin-left: 150px;
+            text-transform: uppercase;
+            /* color: #05690d; */
+            color: #4f6e04;
+            /* color: #333; */
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 30px;
+        }
+
+        .button {
+            margin-left: 260px;
+        }
+
+        .button a {
+            display: inline-block;
+            padding: 17px 25px;
+            background-color: #0a9e16;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            margin-right: 30px;
+            font-weight: bold;
+        }
+
+        .button a:first-child {
+            color: #4caf50;
+            background-color: aliceblue;
+        }
+
+        .button a:first-child:hover {
+            color: #f3f3f3;
+            background-color: #0a9e16;
+        }
+
+        .button a:last-child:hover {
+            color: #4caf50;
+            background-color: aliceblue;
+        }
+
+        #gioiThieu {
+            /* display: flex; */
+            margin-bottom: 50px;
+            margin-top: 50px;
+            margin: 50px 60px 50px 60px;
+        }
+
+        #gioiThieu h2 {
+            font-size: 2rem;
+            margin-left: 80px;
+            margin-bottom: 3px;
+        }
+
+        #gioiThieu .content_gioiThieu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: auto 60px;
+        }
+
+        #gioiThieu .content_gioiThieu .main {
+            width: calc(48% - 20px);
+             
+        }
+
+        #gioiThieu .content_gioiThieu .left{
+            display: block;
+            color: #333;
+        }
+
+        #gioiThieu .content_gioiThieu .right{
+            margin-left: -30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo_healthyFood_.jpg" alt="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#gioiThieu">Giới thiệu</a></li>
+                    <li><a href="#">Cẩm nang</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="gioHang">Giỏ hàng</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="content">
+               <h1> <span>Welcome to</span>
+                    <span>Healthy Life</span>
+                </h1>
+                <pre>Khám phá những công thức ngon và dinh dưỡng 
+                    cho một lối sống khỏe mạnh.</pre>
+                <div class="button">
+                    <a href="#"><b>Vào cửa hàng</b></a>
+                    <a href="#"><b>Xem thêm</b></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="gioiThieu">
+            <h2>
+                Giới thiệu về chúng tôi
+            </h2>
+            <div class="content_gioiThieu">
+                <div class="main left">
+                    Chào mừng quý khách đến với <b>cửa hàng AKiu</b> - Nơi Nâng Tầm Sức Khỏe!
+                    <br> Tại AKiu, chúng tôi tận tâm cung cấp những sản phẩm thực phẩm lành mạnh hàng đầu, nhằm hỗ trợ quý khách xây dựng một lối sống khoa học và đầy năng lượng. Chúng tôi tự hào là một đối tác đồng hành trong hành trình chăm sóc sức khỏe của bạn.
+                    <br>
+                    <br>
+                    <b>Giới Thiệu Công Ty:</b>
+                    <br>AKiu không chỉ là một công ty, mà là một cộng đồng yêu thương và quan tâm đến sức khỏe. Chúng tôi luôn lắng nghe và hiểu rõ nhu cầu của khách hàng để mang đến những giải pháp dinh dưỡng hoàn hảo nhất. Với sứ mệnh "Sức khỏe Là Niềm Đam Mê," chúng tôi không ngừng nỗ lực để tạo ra những sản phẩm chất lượng và an toàn nhất.
+                    <br>
+                    <br>
+                    <b>Sản Phẩm Chính:</b>
+                    <br><b>1. AKiu SuperStart</b>
+                    <br>Sự kết hợp hoàn hảo của nguồn năng lượng và chất xơ, giúp bắt đầu ngày mới với sự tỉnh táo và đầy năng lượng.
+                    <br><b>2. AKiu Organic Boost</b>
+                    <br>Sản phẩm chăm sóc sức khỏe chất lượng cao từ nguồn nguyên liệu hữu cơ, giúp tăng cường hệ thống miễn dịch và cải thiện tiêu hóa.
+                    <br><b>3. AKiu Vitality Blend</b>
+                    <br>Vị ngon ngọt và giàu dinh dưỡng, đây là lựa chọn hoàn hảo cho mọi lứa tuổi, giúp duy trì sức khỏe và tăng cường năng lượng.
+                    <br>
+                    <br><b>Cam Kết:</b>
+                    <br>Chúng tôi cam kết mang lại sự hài lòng tuyệt đối cho quý khách thông qua những sản phẩm không chỉ đảm bảo chất lượng mà còn đặt sức khỏe của bạn lên hàng đầu. Hãy cùng nhau hướng tới một cuộc sống khỏe mạnh và tràn đầy năng lượng với AKiu!
+                    <br>
+                    Cảm ơn quý khách đã lựa chọn AKiu. 
+                    <br>Hãy để chúng tôi đồng hành cùng bạn trên hành trình sức khỏe!
+                </div>
+                <div class="main right">
+                <img src="images/img_right.PNG" alt="">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 22130137@st.hcmuaf.edu.vn. Healthy Eating</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
